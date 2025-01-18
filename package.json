@@ -1,17 +1,16 @@
 {
-  "name": "RCD-WEB",
+  "name": "telegram-bot",
   "version": "1.0.0",
-  "description": "Telegram Bot with GitHub auto deployment",
-  "main": "index.js",
+  "description": "Telegram bot with GitHub auto deployment",
+  "main": "api/bot.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node api/bot.js"
   },
   "dependencies": {
     "axios": "^1.7.9",
     "express": "^4.21.2",
     "node-telegram-bot-api": "^0.66.0",
-    "@octokit/rest": "^21.1.0",
-    "nodemon": "^3.1.9"
+    "@octokit/rest": "^21.1.0"
   },
   "engines": {
     "node": "16.x"
