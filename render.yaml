@@ -1,0 +1,17 @@
+services:
+  - name: telegram-bot
+    type: web
+    env: node
+    region: singapore # Choose your desired region (e.g., singapore, frankfurt)
+    buildCommand: "npm install"
+    startCommand: "npm start"
+    autoDeploy: true
+    branch: main # Replace with your branch name if it's not `main`
+    runtime: node 16
+    envVars:
+      - key: TELEGRAM_BOT_TOKEN
+        value: "your-telegram-bot-token" # Replace with your actual token or set via Render dashboard
+      - key: GITHUB_TOKEN
+        value: "your-github-token" # Replace with your GitHub personal access token
+      - key: GITHUB_USERNAME
+        value: "your-github-username" # Replace with your GitHub username
